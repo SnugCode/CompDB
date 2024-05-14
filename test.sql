@@ -1,3 +1,6 @@
+-- FYI: We use PROCEDURES to simplify entering data into the DB, so the command would be as follows, 
+-- CALL archer_insert('Afzaal', 'Hakeem', '1990-01-01', 'Male')
+
 CREATE TABLE archer_id_seq(
 
     id INT AUTO_INCREMENT PRIMARY KEY

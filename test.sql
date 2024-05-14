@@ -1,5 +1,6 @@
 -- FYI: We use PROCEDURES to simplify entering data into the DB, so the command would be as follows, 
--- CALL archer_insert('Afzaal', 'Hakeem', '1990-01-01', 'Male')
+-- CALL archer_insert('Afzaal', 'Hakeem', '1990-01-01', 'Male'); 
+-- This line would insert the relevant data into the table when calling the correct procedure name 
 
 CREATE TABLE archer_id_seq(
 
@@ -194,4 +195,18 @@ CREATE TABLE Staging (
     StageTime TIME
 );
 
--
+-- The below are also incomplete with EndID, ScoreID and RoundID.
+CREATE TABLE End (
+
+
+);
+
+CREATE TABLE Score (
+
+
+);
+
+CREATE TABLE Round (
+
+
+);

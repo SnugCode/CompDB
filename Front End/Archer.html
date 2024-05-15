@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archery Score Recording</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Archery Score Recording</h1>
+        <form id="scoreForm">
+            <div class="form-group">
+                <label for="round">Round:</label>
+                <select id="round" name="round">
+                    <option value="round1">Round 1</option>
+                    <option value="round2">Round 2</option>
+                    <option value="round3">Round 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="archer">Archer:</label>
+                <select id="archer" name="archer">
+                    <option value="archer1">Archer 1</option>
+                    <option value="archer2">Archer 2</option>
+                    <option value="archer3">Archer 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="equipment">Equipment:</label>
+                <input type="text" id="equipment" name="equipment" value="Default Equipment">
+            </div>
+            <div class="form-group">
+                <label for="ends">Number of Ends:</label>
+                <input type="number" id="ends" name="ends" min="1" max="10">
+            </div>
+            <button type="submit">Start Scoring</button>
+        </form>
+        
+        <div id="scoreEntry" class="score-entry">
+            <h2>Enter Scores</h2>
+            <div class="keypad">
+                <button data-score="X">X</button>
+                <button data-score="10">10</button>
+                <button data-score="9">9</button>
+                <button data-score="8">8</button>
+                <button data-score="7">7</button>
+                <button data-score="6">6</button>
+                <button data-score="5">5</button>
+                <button data-score="4">4</button>
+                <button data-score="3">3</button>
+                <button data-score="2">2</button>
+                <button data-score="1">1</button>
+                <button data-score="M">M</button>
+            </div>
+            <div id="scoreDisplay" class="score-display">
+                <!-- Scores will be displayed here -->
+            </div>
+            <button id="finishScoring">Finish Scoring</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

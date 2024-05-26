@@ -197,7 +197,7 @@ CREATE TABLE `Staging` (
   `StagingID` INT NOT NULL AUTO_INCREMENT,
   `ArcherID` INT NOT NULL,
   `EquipmentID` VARCHAR(10) NOT NULL,
-  `ScoreID` INT NOT NULL,
+  `ScoreID` INT DEFAULT NULL,
   `RoundID` INT NOT NULL,
   `RangeID` VARCHAR(2) NOT NULL,
   `StageDate` DATE NOT NULL,
